@@ -2,20 +2,45 @@
 //  ContentView.swift
 //  Todo
 //
-//  Created by Debdutta Panda on 24/12/22.
+//  Created by Debdutta Panda on 25/12/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject
+    var vm = ViewModel()
     var body: some View {
-        LottieView(name: "lottie", loopMode: .loop)
-                    .frame(width: 250, height: 250)
+        NavigationStack(path: $vm.paths) {
+            EmptyView()
+            .navigationDestination(for: Paths.self) { path in
+                switch path {
+                    case .Splash: SplashScreen()
+                        .onAppear{
+                            vm.onSplash()
+                        }
+                    case .Home: HomeView()
+                }
+            }
+        }
+        .onAppear{
+            vm.gotoSplash()
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+
+extension ContentView {
+    @MainActor class ViewModel: ObservableObject {
+        @Published var paths: [Paths] = []
+        
+        func onSplash(){
+            DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
+                self.paths.append(.Home)
+            }
+        }
+        func gotoSplash(){
+            self.paths.append(.Splash)
+        }
     }
 }

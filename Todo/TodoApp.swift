@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct TodoApp: App {
+    @State var pushNewView: Bool = false
     var body: some Scene {
+        
         WindowGroup {
             ContentView()
         }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F694481295741F400ED5B18 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F694480295741F400ED5B18 /* TodoApp.swift */; };
-		1F694483295741F400ED5B18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F694482295741F400ED5B18 /* ContentView.swift */; };
 		1F694485295741F500ED5B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F694484295741F500ED5B18 /* Assets.xcassets */; };
 		1F694488295741F500ED5B18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F694487295741F500ED5B18 /* Preview Assets.xcassets */; };
 		1F694492295741F500ED5B18 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F694491295741F500ED5B18 /* TodoTests.swift */; };
@@ -17,6 +16,10 @@
 		1F6944AC29574AC100ED5B18 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1F6944AB29574AC100ED5B18 /* Lottie */; };
 		1F6944AE29574C3A00ED5B18 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6944AD29574C3A00ED5B18 /* LottieView.swift */; };
 		1F6944B129574FD500ED5B18 /* lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F6944B029574FD500ED5B18 /* lottie.json */; };
+		1FAFAD7429581B4E00790BF5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFAD7329581B4E00790BF5 /* SplashScreen.swift */; };
+		1FAFAD7629588CCC00790BF5 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFAD7529588CCC00790BF5 /* Paths.swift */; };
+		1FAFAD7829588D2A00790BF5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFAD7729588D2A00790BF5 /* HomeView.swift */; };
+		1FAFAD7A29588D4B00790BF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFAD7929588D4B00790BF5 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 /* Begin PBXFileReference section */
 		1F69447D295741F400ED5B18 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F694480295741F400ED5B18 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
-		1F694482295741F400ED5B18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F694484295741F500ED5B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F694487295741F500ED5B18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F69448D295741F500ED5B18 /* TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,10 @@
 		1F69449D295741F500ED5B18 /* TodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1F6944AD29574C3A00ED5B18 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		1F6944B029574FD500ED5B18 /* lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lottie.json; path = ../../../lottie.json; sourceTree = "<group>"; };
+		1FAFAD7329581B4E00790BF5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		1FAFAD7529588CCC00790BF5 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		1FAFAD7729588D2A00790BF5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1FAFAD7929588D4B00790BF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,14 @@
 		1F69447F295741F400ED5B18 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				1FAFAD7C29588DD700790BF5 /* Tools */,
+				1FAFAD7B29588DB600790BF5 /* Pages */,
 				1F6944AF29574F4900ED5B18 /* Lottie */,
 				1F694480295741F400ED5B18 /* TodoApp.swift */,
-				1F694482295741F400ED5B18 /* ContentView.swift */,
+				1FAFAD7529588CCC00790BF5 /* Paths.swift */,
+				1FAFAD7929588D4B00790BF5 /* ContentView.swift */,
 				1F694484295741F500ED5B18 /* Assets.xcassets */,
 				1F694486295741F500ED5B18 /* Preview Content */,
-				1F6944AD29574C3A00ED5B18 /* LottieView.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -141,6 +149,23 @@
 				1F6944B029574FD500ED5B18 /* lottie.json */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		1FAFAD7B29588DB600790BF5 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1FAFAD7329581B4E00790BF5 /* SplashScreen.swift */,
+				1FAFAD7729588D2A00790BF5 /* HomeView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1FAFAD7C29588DD700790BF5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1F6944AD29574C3A00ED5B18 /* LottieView.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F694483295741F400ED5B18 /* ContentView.swift in Sources */,
+				1FAFAD7429581B4E00790BF5 /* SplashScreen.swift in Sources */,
+				1FAFAD7629588CCC00790BF5 /* Paths.swift in Sources */,
+				1FAFAD7A29588D4B00790BF5 /* ContentView.swift in Sources */,
 				1F694481295741F400ED5B18 /* TodoApp.swift in Sources */,
+				1FAFAD7829588D2A00790BF5 /* HomeView.swift in Sources */,
 				1F6944AE29574C3A00ED5B18 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,12 +466,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Todo/Preview Content\"";
 				DEVELOPMENT_TEAM = Y8965DDS4J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Todo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,12 +499,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Todo/Preview Content\"";
 				DEVELOPMENT_TEAM = Y8965DDS4J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Todo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
