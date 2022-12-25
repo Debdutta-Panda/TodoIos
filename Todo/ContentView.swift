@@ -29,6 +29,29 @@ struct ContentView: View {
     }
 }
 
+struct ContentView1: View {
+    @State private var paths: [Paths] = []
+    var body: some View {
+        NavigationStack(path: $paths) {
+            EmptyView()
+            .navigationDestination(for: Paths.self) { path in
+                switch path {
+                    case .Splash: SplashScreen()
+                        .onAppear{
+                            DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
+                                paths.append(.Home)
+                            }
+                        }
+                    case .Home: HomeView()
+                }
+            }
+        }
+        .onAppear{
+            paths.append(.Splash)
+        }
+    }
+}
+
 
 extension ContentView {
     @MainActor class ViewModel: ObservableObject {

@@ -19,9 +19,12 @@ struct SplashScreen: View {
                 .padding([.bottom],20)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        
+        .navigationBarBackButtonHidden(true)
     }
 }
 
-
-
+struct SplashScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        SplashScreen()
+    }
+}
