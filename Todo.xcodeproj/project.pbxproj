@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F67735F29597CA500BCD2FE /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 1F67735E29597CA500BCD2FE /* SQLite */; };
+		1F67736129597D5200BCD2FE /* Db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F67736029597D5200BCD2FE /* Db.swift */; };
+		1F677363295987E300BCD2FE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F677362295987E300BCD2FE /* Task.swift */; };
 		1F694481295741F400ED5B18 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F694480295741F400ED5B18 /* TodoApp.swift */; };
 		1F694485295741F500ED5B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F694484295741F500ED5B18 /* Assets.xcassets */; };
 		1F694488295741F500ED5B18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F694487295741F500ED5B18 /* Preview Assets.xcassets */; };
@@ -40,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F67736029597D5200BCD2FE /* Db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Db.swift; sourceTree = "<group>"; };
+		1F677362295987E300BCD2FE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		1F69447D295741F400ED5B18 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F694480295741F400ED5B18 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		1F694484295741F500ED5B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F67735F29597CA500BCD2FE /* SQLite in Frameworks */,
 				1F6944AC29574AC100ED5B18 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +120,8 @@
 				1FAFAD7929588D4B00790BF5 /* ContentView.swift */,
 				1F694484295741F500ED5B18 /* Assets.xcassets */,
 				1F694486295741F500ED5B18 /* Preview Content */,
+				1F67736029597D5200BCD2FE /* Db.swift */,
+				1F677362295987E300BCD2FE /* Task.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			name = Todo;
 			packageProductDependencies = (
 				1F6944AB29574AC100ED5B18 /* Lottie */,
+				1F67735E29597CA500BCD2FE /* SQLite */,
 			);
 			productName = Todo;
 			productReference = 1F69447D295741F400ED5B18 /* Todo.app */;
@@ -261,6 +270,7 @@
 			mainGroup = 1F694474295741F400ED5B18;
 			packageReferences = (
 				1F6944AA29574AC100ED5B18 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1F67735D29597CA500BCD2FE /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			productRefGroup = 1F69447E295741F400ED5B18 /* Products */;
 			projectDirPath = "";
@@ -305,6 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F677363295987E300BCD2FE /* Task.swift in Sources */,
+				1F67736129597D5200BCD2FE /* Db.swift in Sources */,
 				1FAFAD7429581B4E00790BF5 /* SplashScreen.swift in Sources */,
 				1FAFAD7629588CCC00790BF5 /* Paths.swift in Sources */,
 				1FAFAD7A29588D4B00790BF5 /* ContentView.swift in Sources */,
@@ -645,6 +657,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1F67735D29597CA500BCD2FE /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.14.1;
+			};
+		};
 		1F6944AA29574AC100ED5B18 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -656,6 +676,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1F67735E29597CA500BCD2FE /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F67735D29597CA500BCD2FE /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
 		1F6944AB29574AC100ED5B18 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1F6944AA29574AC100ED5B18 /* XCRemoteSwiftPackageReference "lottie-ios" */;

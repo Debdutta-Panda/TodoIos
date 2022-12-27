@@ -43,6 +43,7 @@ struct ContentView1: View {
                             }
                         }
                     case .Home: HomeView()
+                        .navigationTitle("Home")
                 }
             }
         }
